@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.publish-mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1031;
+    width: 100%;
+    height: 100%;
+    background: #cccccc;
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+.publish-box{
+    position: fixed;
+    top: 150px;
+    left:25%;
+    z-index: 1032;
+    width: 50%;
+    height: 300px;
+    box-shadow: 4px 4px 20px 2px;
+    -moz-box-shadow: 4px 4px 20px 2px;
+    -webkit-box-shadow: 4px 4px 20px 2px;
+    -o-box-shadow: 4px 4px 20px 2px;
+    background: #ffffff;
+}
+.publish-header{
+    box-sizing:border-box;
+    width: 100%;
+    height: 40px;
+    background: #42B983;
+    padding: 5px;
+    text-align: center;
+}
+.publish-header .publish-btn1{
+    float: left;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+.publish-header .publish-title{
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+.publish-header .publish-btn2{
+    float: right;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+textarea{
+    box-sizing:border-box;
+    width: 100%;
+    height: 210px;
+    resize:none;
+    outline:none;
+    padding: 5px;
+    font-size: 1.5rem;
+    border: none;
+}
+.publish-footer{
+    box-sizing:border-box;
+    width: 100%;
+    background: #F2F2F2;
+    height: 50px;
+}
+.publish-checkbox{
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 4%;
+}
+.publish-checkbox label{
+    width: 50px;
+    height: 30px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    position: relative;
+    display: inline-block;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    border-radius: 42px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.publish-checkbox label::after{
+    content: '';
+    height: 28px;
+    width: 28px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #ffffff;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.publish-checkbox input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    cursor: pointer;
+}
+.publish-checkbox span{
+    position: relative;
+    font-size: 1.5rem;
+    top: -14px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+    margin-left: 5px;
+}
+.publish-checkbox input:hover + label::after{
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+.publish-checkbox input:checked + label::after{
+    left: 20px;
+}
+.publish-checkbox input:checked + label{
+    background: #42B983;
+    border: 1px solid #42B983;
+}
+.publish-checkbox input:checked + span{
+    color: #42B983;
+}
+.publish-send{
+    float: right;
+    margin-top: 10px;
+    margin-right: 4%;
+    width: 50px;
+    height: 30px;
+    border: none;
+    background: transparent;
+}
+.publish-send:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.publish-send span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    border-radius: 42px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.publish-send span:hover{
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+@media(max-width: 600px){
+    .publish-box{
+        width: 80%;
+        left:10%;
+        height: 250px;
+    }
+    textarea{
+        height: 160px;
+    }
+}
