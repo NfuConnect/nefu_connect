@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/publish.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <title>测试平台</title>
 </head>
 <body>

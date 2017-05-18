@@ -42,15 +42,25 @@ define(["jquery"],function(){
             /*创建DOM结构结束*/
 
             /*设置点击事件开始*/
-            $(".dialog-box").css({
-                width: defaultSettings.width,
-                height: defaultSettings.height
-            });
+            var PublishBox = $(".publish-box");
+            var PublishCon = $(".publish-container");
+            var PublishMask = $(".publish-mask");
+            PublishBox.addClass('animated fadeInDown');
+            PublishMask.addClass('animated fadeIn');
             $(".publish-btn1").on('click',function(){
-                $(".publish-container").remove();
+                PublishBox.addClass('animated fadeOutUp');
+                PublishMask.addClass('animated fadeOut');
+                setTimeout(function(){
+                    PublishCon.remove();
+                },600)
+
             });
-            $(".publish-mask").on('click',function(){
-                $(".publish-container").remove();
+            PublishMask.on('click',function(){
+                PublishBox.addClass('animated fadeOutUp');
+                PublishMask.addClass('animated fadeOut');
+                setTimeout(function(){
+                    PublishCon.remove();
+                },600)
             });
             $('.publish-header .glyphicon-ok').on('click',function(){
                 $('.publish-send').click();
