@@ -58,6 +58,9 @@ class Welcome extends CI_Controller {
 	public function test(){
 		$this->load->view('test');
 	}
+	public function test2(){
+	$this->load->view('test2');
+}
 	/*首页功能开始*/
 	public function index()
 	{

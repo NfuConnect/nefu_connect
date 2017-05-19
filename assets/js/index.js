@@ -225,6 +225,7 @@ $(function () {
         alert('请先登录再发布');
         top.location = 'welcome/login';
     });
+
 });
 
 
