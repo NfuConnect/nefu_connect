@@ -39,6 +39,7 @@
             <div style="text-align: center;padding-left: 0;"><button type="submit" class="btn btn-default">发布</button></div>
         </form>
     </div>
+    //
     <!--内容主体结束-->
     <!--底部导航栏开始-->
     <footer class="footer">

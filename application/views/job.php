@@ -54,7 +54,7 @@
     <li>
         <a href="">
             <div class="wrapper">
-                <a href="job/job_details?job_id={{job_id}}" class="job-logo"><img src="assets/img/job.png" alt="" class="job-left"></a>
+                <a href="job/job_details?job_id={{job_id}}" class="job-logo"><img src="assets/img/job2.png" alt="" class="job-left"></a>
                 <a href="job/job_details?job_id={{job_id}}" style="text-decoration: none;">
                     <div class="job-info">
                         <div class="job-header">
@@ -80,6 +80,7 @@
             </div>
         </a>
     </li>
+    //
 </script>
 </body>
 </html>

@@ -33,7 +33,7 @@
             <li>
 
                     <div class="wrapper">
-                        <a href="" class="job-logo"><img src="assets/img/job.png" alt="" class="job-left"></a>
+                        <a href="" class="job-logo"><img src="assets/img/job2.png" alt="" class="job-left"></a>
                             <div class="job-info">
                                 <div class="job-header">
                                     <span class="job-header-left"><?php echo $job->job_name;?></span>
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                     </div>
-
+//
             </li>
         </ul>
             <div class="phone">联系电话：<?php echo $job->job_phone;?></div>
