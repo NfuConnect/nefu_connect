@@ -17,7 +17,7 @@
     <!--导航栏开始-->
     <div class="title navbar navbar-fixed-top" style="background: #00b7ee;opacity:0.7;">
         <div class="title-left" id="logo">
-            <a href="job/load_job"><img src="assets/img/back.png" alt=""></a>
+            <a href="job/load_job"><img src="assets/img/back2.png" alt=""></a>
         </div>
         <div class="title-center" id="title" style="color:#000;font-weight: 800;padding-right:30px;" >
             ...职位信息...
@@ -33,7 +33,7 @@
             <li>
 
                     <div class="wrapper">
-                        <a href="" class="job-logo"><img src="assets/img/job2.png" alt="" class="job-left"></a>
+                        <a href="" class="job-logo"><img src="assets/img/job.png" alt="" class="job-left"></a>
                             <div class="job-info">
                                 <div class="job-header">
                                     <span class="job-header-left"><?php echo $job->job_name;?></span>
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                     </div>
-//
+
             </li>
         </ul>
             <div class="phone">联系电话：<?php echo $job->job_phone;?></div>

@@ -30,7 +30,7 @@ function time_tran($the_time) {
         }
     }
 }
-//时间友好转换结束了
+//时间友好转换结束
 class Job extends CI_Controller {
     public function load_job(){
         $this->load->view('job');
