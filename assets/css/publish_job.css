@@ -1,0 +1,11 @@
+#publish-job{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Arial, Microsoft YaHei;
+}
+#publish-job input{
+    width: 35%;
+}
+#publish-job > div{
+    padding-left:6%;
+}
