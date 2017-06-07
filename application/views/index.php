@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/publish.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <title>测试平台</title>
 </head>
 <body>
@@ -53,6 +54,7 @@
 <script src="assets/js/jquery-2.1.1.min.js"></script>
 <script src="assets/js/template.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.js"></script>
 <script src="assets/js/require.js" data-main="assets/js/index"></script>
 <script id="messages-push" type="text/html">
     <li>
